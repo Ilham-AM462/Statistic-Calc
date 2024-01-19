@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aPane" prefHeight="296.0" prefWidth="284.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuController">
+   <children>
+      <Button layoutX="213.0" layoutY="249.0" mnemonicParsing="false" onAction="#pressedAbout" text="About" />
+      <Button fx:id="nextButton3" disable="true" layoutX="122.0" layoutY="236.0" mnemonicParsing="false" onAction="#pressedNext" text="Next" />
+      <RadioButton fx:id="rButtonS" disable="true" layoutX="106.0" layoutY="179.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="73.0" text="String">
+         <toggleGroup>
+            <ToggleGroup fx:id="tipeData" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rButtonN" disable="true" layoutX="22.0" layoutY="179.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="73.0" text="Nomor" toggleGroup="$tipeData" />
+      <Label fx:id="typeData" disable="true" layoutX="22.0" layoutY="148.0" prefHeight="25.0" prefWidth="81.0" text="Tipe Data">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtInput" layoutX="22.0" layoutY="116.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="163.0" />
+      <Label layoutX="23.0" layoutY="81.0" text="Banyak Data">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="isNumeric" layoutX="25.0" layoutY="99.0" prefHeight="15.0" prefWidth="156.0" text="Jawaban harus berbentuk numeric" textFill="RED" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirmButton" layoutX="203.0" layoutY="116.0" mnemonicParsing="false" onAction="#pressedConfirm" text="Confirm" />
+      <Label layoutX="90.0" layoutY="32.0" prefHeight="25.0" prefWidth="105.0" text="STATISTSIN">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

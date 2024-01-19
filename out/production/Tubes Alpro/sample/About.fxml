@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aPane" prefHeight="296.0" prefWidth="284.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AboutController">
+   <children>
+      <Label layoutX="65.0" layoutY="29.0" prefHeight="26.0" prefWidth="155.0" text="Tentang Aplikasi">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="83.0" prefHeight="17.0" prefWidth="227.0" text="StatisTsin adalah aplikasi penghitung data" />
+      <Label layoutX="29.0" layoutY="100.0" prefHeight="17.0" prefWidth="227.0" text="tunggal. Tujuan dari aplikasi ini adalah" />
+      <Label layoutX="29.0" layoutY="117.0" prefHeight="17.0" prefWidth="227.0" text="Menentukan median, mean, dan modus" />
+      <Label layoutX="29.0" layoutY="134.0" prefHeight="17.0" prefWidth="227.0" text="dari data tersebut. Jika tipe data adalah " />
+      <Label layoutX="29.0" layoutY="151.0" prefHeight="17.0" prefWidth="227.0" text="kata, maka hanya dapat menentukan " />
+      <Label layoutX="29.0" layoutY="168.0" prefHeight="17.0" prefWidth="227.0" text="median dan mean." />
+      <Button layoutX="116.0" layoutY="219.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="54.0" text="Back" />
+   </children>
+</AnchorPane>
